@@ -1,0 +1,13 @@
+D:\Projects\OrderManagementSystem\DataAccess\obj\Debug\DataAccess.csprojAssemblyReference.cache
+D:\Projects\OrderManagementSystem\DataAccess\obj\Debug\DataAccess.csproj.CoreCompileInputs.cache
+D:\Projects\OrderManagementSystem\DataAccess\bin\Debug\DataAccess.dll
+D:\Projects\OrderManagementSystem\DataAccess\bin\Debug\DataAccess.pdb
+D:\Projects\OrderManagementSystem\DataAccess\bin\Debug\Helpers.dll
+D:\Projects\OrderManagementSystem\DataAccess\bin\Debug\log4net.dll
+D:\Projects\OrderManagementSystem\DataAccess\bin\Debug\Helpers.pdb
+D:\Projects\OrderManagementSystem\DataAccess\bin\Debug\log4net.xml
+D:\Projects\OrderManagementSystem\DataAccess\obj\Debug\DataAccess.csproj.CopyComplete
+D:\Projects\OrderManagementSystem\DataAccess\obj\Debug\DataAccess.dll
+D:\Projects\OrderManagementSystem\DataAccess\obj\Debug\DataAccess.pdb
+D:\Projects\OrderManagementSystem\DataAccess\bin\Debug\BusinessModule.dll
+D:\Projects\OrderManagementSystem\DataAccess\bin\Debug\BusinessModule.pdb

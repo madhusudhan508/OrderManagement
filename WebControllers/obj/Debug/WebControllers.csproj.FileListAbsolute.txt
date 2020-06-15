@@ -1,0 +1,6 @@
+D:\Projects\OrderManagementSystem\WebControllers\bin\Debug\WebControllers.dll
+D:\Projects\OrderManagementSystem\WebControllers\bin\Debug\WebControllers.pdb
+D:\Projects\OrderManagementSystem\WebControllers\obj\Debug\WebControllers.csproj.CoreCompileInputs.cache
+D:\Projects\OrderManagementSystem\WebControllers\obj\Debug\WebControllers.dll
+D:\Projects\OrderManagementSystem\WebControllers\obj\Debug\WebControllers.pdb
+D:\Projects\OrderManagementSystem\WebControllers\obj\Debug\WebControllers.csprojAssemblyReference.cache

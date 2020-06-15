@@ -1,0 +1,78 @@
+Software Requiremnts: VS 2017, ASP.NET WEB API 2.0, SQLSERVER 2014, POST MAN, 
+
+Need to install from Nuget:  
+LOG4NET
+Microsoft.IdentityModel.JsonWebTokens
+System.IdentityModel.Tokens.Jwt
+
+Per email sending, Please add the Username and Password for your gmail account. make sure your gmail setting Less secure app should on
+
+Please follow the steps to run the application.
+
+Restore .bak database to your local server and then change the connection string in WebApi wen.config file
+1. Set the start up project as WebApi
+2. once ran the application Open Postman
+3. Before going to orders api u can get the token for authentication and authrization 
+	http://localhost:54253/api/Auth/validateUsers 
+          admin/admin
+4. once get the token, please pass this token in postman header like below:
+
+	Key : Authorization
+	Value : eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJqdGkiOiI0OTJkY2ZjOC1jNTYyLTQ5MWQtOTdlZC0xZjNlOTA5NjZjZjIiLCJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3ZlcnNpb24iOiIxIiwiaHR0cDovL3NjaGVtYXMubWljcm9zb2Z0LmNvbS93cy8yMDA4LzA2L2lkZW50aXR5L2NsYWltcy9leHBpcmVkIjoiMTQtMDYtMjAyMCAyMjo0ODoyMyIsIm5hbWVpZCI6IjIiLCJ1bmlxdWVfbmFtZSI6ImJ1eWVyIiwicm9sZSI6IkJ1eWVyIiwibmJmIjoxNTkyMTQ5NzAzLCJleHAiOjE1OTIxNTUxMDMsImlhdCI6MTU5MjE0OTcwMywiaXNzIjoibG9jYWxob3N0IiwiYXVkIjoibG9jYWxob3N0In0.rSiGn141p71T4zZM84cCWcCPmqPEyhrnj4ujDQ0D7hs:admin 
+5. http://localhost:54253/api/Orders/InsertOrders
+ 
+	{
+    "OrderId":"0",
+    "BuyerId":"0",
+    "OrderStatus" : "P",
+    "BuyerInfoDetail": {
+        "BuyerId":"0",
+        "LastName" : "Madhu",
+        "FirstName" : "Sudhan",
+        "PhoneNumber" : "123456789",
+        "Email": "a@gmail.com",
+        "Address" : "Madhapur, Hyderabad"
+    },
+    "ProductInfoDetail": [
+      {
+        "SKUID":"0",
+        "Name" : "Dal",
+        "Amount": "1250",
+        "Weight": "2.4",
+        "Quantity": 25,
+        "Height":"2.3",
+        "OrderId":"01235" 
+      }
+    ]
+    
+  }
+
+6.http://localhost:54253/api/Orders/UpdateOrders
+
+{
+    "OrderId":"1",
+    "BuyerId":"1",
+    "OrderStatus" : "P",
+    "BuyerInfoDetail": {
+        "BuyerId":"1",
+        "LastName" : "Madhu",
+        "FirstName" : "Sudhan",
+        "PhoneNumber" : "54634534",
+        "Email": "a@gmail.com",
+        "Address" : "Madhapur, Hyderabad"
+    },
+    "ProductInfoDetail": [
+      {
+        "SKUID":"1",
+        "Name" : "Rice",
+        "Amount": "1250",
+        "Weight": "2.4",
+        "Quantity": 25,
+        "Height":"2.3",
+        "OrderId":"01235" 
+      }
+    ]
+    
+  }
+7. http://localhost:54253/api/Orders/DeleteOrders/1
+8. Per Barcode generation, please check BarcodeService --> GenerateBarcodeLabel menthod

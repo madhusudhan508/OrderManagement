@@ -1,0 +1,6 @@
+D:\Projects\OrderManagementSystem\BusinessModule\bin\Debug\BusinessModule.dll
+D:\Projects\OrderManagementSystem\BusinessModule\bin\Debug\BusinessModule.pdb
+D:\Projects\OrderManagementSystem\BusinessModule\obj\Debug\BusinessModule.csproj.CoreCompileInputs.cache
+D:\Projects\OrderManagementSystem\BusinessModule\obj\Debug\BusinessModule.dll
+D:\Projects\OrderManagementSystem\BusinessModule\obj\Debug\BusinessModule.pdb
+D:\Projects\OrderManagementSystem\BusinessModule\obj\Debug\BusinessModule.csprojAssemblyReference.cache
